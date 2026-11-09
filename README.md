@@ -1,50 +1,66 @@
-# 跟单｜Solana Meme 钱包跟单研究方法论
+# 跟单领域｜先建立 Solana Meme 通用专业认知，再研究跟单
 
-> 定位：独立的「跟单研究与决策知识库」，不是自制交易终端、自动买卖机器人，也不是宣称有稳定盈利策略的信号群。初期只读调查与纸上跟单；实际交易、授权、签名、付款均不在本仓库当前任务范围。
+> 仓库名 \`gendan\` 是历史项目名称；**当前知识入口与第一优先级是通用 Meme 市场认知**。跟单是从这套知识衍生的一个应用领域，而不是整个项目知识本体。当前任务以专业研究、成熟软件复用及可复核只读分析为主，不自动下单/签名/付款。
 
-## 目标
+## 现在先读哪里？
 
-让普通人仅用自然语言提出「找什么钱包、这笔为什么异常、该不该跟、为什么失败」，AI 结合专业知识与已经成熟的分析软件，完成**发现 → 核实 → 钱包/群体角色识别 → 跟单可复制性分析 → 持续跟踪 → 反证和复盘**。
+**通用 Meme 专业知识（主入口）**
 
-本项目特别关注：多钱包并非孤立交易者；出资、买入、捆绑/同步、刷量、接收转仓、卖出、KOL 扩散、跨 Mint 资金接力可能由不同地址承担。**角色是任务和时段相关的证据候选，不是身份定罪。**
+1. [通用 Meme 认知总入口](knowledge/meme/README.md)：把市场看作协议、经济组织、价格流动性、注意力、生命周期和观测系统。
+2. [市场系统与利益组织](knowledge/meme/01-market-system.md)：发行、参与者、资本/费用与注意力反馈。
+3. [资金、库存与价格](knowledge/meme/02-capital-inventory-price.md)：账户/owner、Swap/Transfer/LP、市场风险承接和可卖容量。
+4. [数据与证据失效](knowledge/meme/03-evidence-and-failure.md)：采样、标签、时钟、样本选择和负例。
+5. [AI 领域认知与专业研究方法](knowledge/meme/04-cognitive-research-method.md)：从口语问题到现象、机制、痕迹、竞争解释、关键未知。
+6. [通用知识 → 不同应用](knowledge/meme/05-to-applications.md)：新币发现、单 Mint、跨 Mint 群体、经济机制和跟单。
+7. [来源和继承边界](knowledge/meme/SOURCES.md)：源文件审读状态与历史研究对应。
+8. [通用认知案例 001](research/MEME-CASE-001.md)：市场价格、地址数与库存现象的三种竞争解释（**教学假想，非实证**）。
+9. [AI Meme 通用认知指令](prompts/AI-Meme通用认知指令.md)：可在任意 AI 研究会话中按需调用，不是全量强制流程。
 
-## 不重复造轮子
+**跟单领域（第二阶段应用，旧文档保留）**
 
-- **Froggy / Frogy Parser**：优先用其现有命令发现/过滤候选地址、交叉代币钱包和开发者关联地址；不要把供应商的 ROI、PnL、Win Rate 直接当真实跟单收益。
-- **GMGN / OKX / Blix 等现有软件**：按实际可用功能复核钱包交易、代币阶段、持仓、池子与资金关系；不同工具统计口径可能不同。
-- **ai-d**：继承短意图专业转化、按需调查、竞争解释、可核查交付和「防研究空转」方法。
-- **grok/blix**：引用 Solana 协议、钱包/Token Account、资金网络、库存、市场机制及旧 Hermes / qb- / meme- 专业知识。不机械复制整个项目，也不声称其未验证研究已证实。
+- [钱包选择](methodology/01-wallet-selection.md) ｜ [钱包网络](methodology/02-wallet-network.md) ｜ [可复制性验证](methodology/03-copyability-validation.md)
+- [Froggy 成熟工具研究](tools/froggy-playbook.md) ｜ [跟单专项 AI 提示词](prompts/AI-跟单研究指令.md)
+- [当前台账](research/ACTIVE-LEDGER.md)：研究顺序、已查证内容、尚未解决的实际问题。
 
-## 直接进入
+## 为什么要先理解通用 Meme？
 
-| 真实问题 | 方法论入口 | 当前成品工具 |
-| --- | --- | --- |
-| 哪些钱包值得关注？ | [钱包发现与筛选](methodology/01-wallet-selection.md) | Froggy / GMGN |
-| 多地址实际怎样配合？ | [钱包角色和网络调查](methodology/02-wallet-network.md) | Froggy 开发者关联导出、Blix 只读调查方法 |
-| 这钱包赚钱，我为什么未必赚？ | [可复制性与实证](methodology/03-copyability-validation.md) | 钱包历史 + 纸上跟单记录 |
-| Froggy 具体怎样配合？ | [Froggy 操作与研究手册](tools/froggy-playbook.md) | Froggy Parser |
-| 只说一句「继续研究」怎么办？ | [AI 长提示词 / 工作约定](prompts/AI-跟单研究指令.md) | ai-d 方法 + 相关工具 |
-| 上轮哪里错了？下一轮做什么？ | [研究与交付台账](research/ACTIVE-LEDGER.md) | GitHub 版本历史 |
+只见「早期买入、涨幅、持币集中、许多钱包同槽交易」，无法解释：
+- 创币者、买方、LP、机器人、服务商、KOL 各自可能赚什么、亏什么；
+- Token 在地址间转移与新资金真正买入有什么不同；
+- 某个价格为什么会升高，又为何不代表大仓位能卖得掉；
+- 同源资金或同 Slot 是否可能由公共设施和共同事件造成；
+- 终端的统计分母、事件分类和延迟是否改变了我们以为的市场规律。
 
-## 三条第一性问题
+这些全是 **Meme 市场通用专业问题**。先研究这些，再判断交易观察的真实用途；未来即使不用 Froggy 或不做跟单，知识仍可用于其他市场分析。
 
-1. 钱包**历史获利的原因**是什么？是选择能力、发行时点、持币/分发角色、提前知道的信息、执行技术，还是历史样本偏差？
-2. 其买卖在**我真正能看到的时间之后**，是否仍有可复制价值？必须扣除时差、价差、手续费、滑点、坏币不可卖、延迟退出。
-3. 这个地址是独立决策者，还是某群体里的**分工节点**？同一交易团队也可能用不同钱包分别承担买入、转仓、营销、卖出。
+## 知识与能力的层次
 
-## 证据及边界
+\`\`\`text
+上层方法：ai-d｜问题表征、知识选择、跨来源研究、反证、纠错
+                    ↓
+市场认知：Solana Meme｜协议 → 经济主体 → 资金/库存
+                    ↕    市场阶段、价格、流动性、注意力
+                    ↕    数据可见性、抽样和可验证性
+                    ↓
+多种用途：市场发现｜单Mint调查｜跨Mint监控｜经济机制
+                                    └→ 跟单筛选、跟单风险
+                    ↓
+现成工具：Blix / OKX / GMGN / Froggy / 其他实际可用产品
+\`\`\`
 
-每项结论必须区分：原始链上事实 / 软件提供的标签或统计 / 自己的结构推断 / 未验证假设 / UNKNOWN。跨软件的一致标签不等于独立实证。历史回填不能冒充事前信号；同一 Slot、同一出资平台或可达多跳，均不能单独证明共同控制。
+上图是**知识依赖**而非强制研究流程。按具体问题选需要的部分，不把旧 Grok 十二域/八层/22位专家复制成第二套框架。
 
-与旧项目区别：先研究「怎样借助成熟软件建立可靠的专业跟单方法」，只有在明确出现不可替代且可验收的能力缺口后才考虑小规模程序扩展。旧离线原型可以留作辅助实验，不是本项目的主体。
+## 上游来源
 
-## 来源入口（2026-11-10 复核）
+- 通用人机研究：https://github.com/sunshihao001/ai-d
+- Meme 专业知识与 Blix 主体：https://github.com/sunshihao001/grok/tree/blix/knowledge
+- 原 Hermes：https://github.com/sunshihao001/-
+- 原 qb-：https://github.com/sunshihao001/qb-
+- 原 meme-：https://github.com/sunshihao001/meme-
+- Froggy 文档（将来用于应用验证）：https://froggy-v2-0-by-shit101.gitbook.io/frogy-v2-0-by-shit101
 
-- Froggy 官方介绍：https://froggy-v2-0-by-shit101.gitbook.io/frogy-v2-0-by-shit101
-- Froggy 命令文档：https://froggy-v2-0-by-shit101.gitbook.io/frogy-v2-0-by-shit101/getting-started/kak-polzovatsya-froggy
-- Froggy 跟单教程：https://froggy-v2-0-by-shit101.gitbook.io/frogy-v2-0-by-shit101/getting-started/obuchayushie-video/video-1-chto-takoe-kopitreiding
-- 研究方法上游：https://github.com/sunshihao001/ai-d
-- Meme 专业知识上游：https://github.com/sunshihao001/grok/tree/blix/knowledge
-- 关键钱包可跟随性原研究：https://github.com/sunshihao001/grok/blob/blix/knowledge/methods/key-wallet-investigation-brief.md
+## 当前真实完成度
 
-**来源状态**：已读取 Froggy 官方 GitBook 搜索可用文本和上述上游仓库部分原文；Froggy 主站本轮无法直接打开、未登录机器人、未付费、未验证其实际输出或历史数据完整度。仓库中所有参数/步骤是**研究方法候选**，不是盈利承诺。
+已提交：**通用知识入口、机制正文、认知方法、来源映射和教学示例**。这是对部分已读原始资料的知识综合；**不是全量历史资料都深读了，不是运行中的智能研究 Agent，也未通过独立认知提升或实盘收益验证**。
+
+接下来应先检查本体系能否比「看标签/看价格」更准确解释一个不涉及跟单的真实 Meme 市场问题。若方法有效，再把通用能力应用到 Froggy 等成熟软件的跟单研究中。当前真实进度及遗留问题参见[台账](research/ACTIVE-LEDGER.md)。
