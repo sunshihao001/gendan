@@ -27,7 +27,7 @@
 
 - [Blix 知识总览（含 2026-11-09 新修订）](https://github.com/sunshihao001/grok/blob/blix/knowledge/README.md)：特别警惕数据筛选/结果不成熟/测量混淆。
 - [旧 Grok 十二域主册](https://github.com/sunshihao001/grok/blob/blix/knowledge/foundations/legacy-grok-domain-core.md)：历史完整知识索引，**SOURCE_COPIED/UNVERIFIED**，不再作为现行全局指令。
-- [Blix DOMAIN-MODEL](https://github.com/sunshihao001/grok/blob/blix/knowledge/DOMAIN-MODEL.v1.json)：知识路由结构，标明 \`STRUCTURAL_ADOPTION_NOT_RUNTIME_KNOWLEDGE_ACTIVATION\`。
+- [Blix DOMAIN-MODEL](https://github.com/sunshihao001/grok/blob/blix/knowledge/DOMAIN-MODEL.v1.json)：知识路由结构，标明 `STRUCTURAL_ADOPTION_NOT_RUNTIME_KNOWLEDGE_ACTIVATION`。
 - [原资料覆盖元数据](https://github.com/sunshihao001/grok/blob/blix/knowledge/references/source-coverage-v0.1.json)：区分 TREE_INVENTORIED、CONTENT_READ、DEEP_CONCEPT_STUDIED。
 - [ai-d 研究知识入口](https://github.com/sunshihao001/ai-d/blob/main/knowledge/INDEX.md)、[未知发现](https://github.com/sunshihao001/ai-d/blob/main/research/2026-11-07-problem-driven-unknown-discovery.md)。
 - [Hermes 00c](https://github.com/sunshihao001/-/blob/main/design/phase1-research/00c-GMGN-%E6%80%9D%E7%BB%B4%E6%A8%A1%E5%9E%8B%E6%8F%90%E7%82%BC.txt)、[Hermes 钱包角色](https://github.com/sunshihao001/-/blob/main/learning/10.md)。

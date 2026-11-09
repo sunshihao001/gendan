@@ -15,10 +15,10 @@
 
 ## 四种时间不能合成「交易时间」
 
-- \`event_time\`：链上 Slot/blockTime 或相关区间。
-- \`recorded_at\`：索引器/数据库第一次实际记录时间。
-- \`available_to_user_at\`：研究者当时真正能收到并理解事件的时间。
-- \`outcome_matured_at\`：研究的收益/毕业/失败标签何时具备判断资格。
+- `event_time`：链上 Slot/blockTime 或相关区间。
+- `recorded_at`：索引器/数据库第一次实际记录时间。
+- `available_to_user_at`：研究者当时真正能收到并理解事件的时间。
+- `outcome_matured_at`：研究的收益/毕业/失败标签何时具备判断资格。
 
 晚到的补查数据可以修复历史解释，却不允许伪造「当时可提前发现」。延迟时间和源可信度都与价值有关。
 
@@ -57,9 +57,9 @@ Blix 新近知识报告对一个公开 Meme 采集/标签项目的源码与离�
 
 ## 对任何外部知识的最低出处结构
 
-\`claim_id, source_url, source_type, source_version_or_date, scope, evidence_type, author_assertion_or_observed, assumption, counterexample, applicability, unknown, revised_at\`
+`claim_id, source_url, source_type, source_version_or_date, scope, evidence_type, author_assertion_or_observed, assumption, counterexample, applicability, unknown, revised_at`
 
-允许 \`THEORY_SUPPORTED\` 作为可逆的研究假说依据；只有有可复查实际输出才能升级具体业务事实。系统不能因研究报告增多自动提高信心。
+允许 `THEORY_SUPPORTED` 作为可逆的研究假说依据；只有有可复查实际输出才能升级具体业务事实。系统不能因研究报告增多自动提高信心。
 
 ## 读数和异常时的反证清单
 
