@@ -26,6 +26,11 @@
 
 如果某钱包把 Token 转给新钱包，可调用旧 Blix 的 Token Account/owner、swap/transfer、资产库存与多跳归因；如果某钱包只能首槽成功，可调用生命周期和执行经济学；如果一份盈利榜只包含历史大涨币，可调用样本选择与证据工程。**不需要先把这些一般知识全文学完才研究跟单。**
 
+## 通向真实市场工作
+
+- [全项目建设路线与现状](../../project/CONSTRUCTION-ROUTES.md)：跟单研究仅是整套市场实践和专业验证中的一条路线。
+- [第一轮真实调查操作卡](../../operations/FIRST-REAL-CASE.md)：现在应该打开什么成熟终端、记录哪些事实及如何明确未完成。
+
 ## 本目录的实际入口
 
 - **[03 深度研究报告：钱包交易子集与双层关系](../../research/RU-003-deep-study.md)**｜[真实公开对象和证据缺口](../../research/RU-003-public-evidence.md)｜[离线复算反例](../../research/labs/study003_overlap_repro.py)。
