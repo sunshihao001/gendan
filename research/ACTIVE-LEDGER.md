@@ -1,3 +1,17 @@
+## 2026-11-10｜成熟成品的内部机制深审完成（接能力空间研究）
+
+**承接**：上一轮“跟单能发展哪些能力”已组织为能力地图，本轮用户同意继续对成熟产品源代码、专业机制和跨能力组合进行深审。
+
+**实做/证据**：逐文件读取 Million `owners.service.ts`、`opportunities.service.ts`、`shadow.service.ts`、`live-feed.service.ts`、`consensus.service.ts`；ScreenerBot `trader/copy/` 的 analytics/guards/paper execution/Agent接口；dexterm README/许可证；ricoboost 失败复盘；Gendan engine及Blix既有对照，并进行一组**简化Hub阈值离线逻辑计算**。报告：[成熟产品内部机制与组合对照](MATURE-PRODUCT-MECHANISMS-20261110.md)。
+
+**新增改变判断的证据**：Million 明确不以 coentry 边直接并组（源码提182-wallet误合并历史）；Hub阈值及coentry仍计入degree存在源级归因边界；其群体信号函数未显式过滤时间，但上游每5分钟清理超过15分钟的 LiveEvent，不能错报“无限历史计票”；ScreenerBot把回填与正常到达延迟区分、paper任务仓位各自记账；Million MCP有写入规则/关注列表工具，不能简单宣布全接口只读；ScreenerBot BUSL1.1、dexterm AGPL3、Million MIT不能混作可直接合并源码。
+
+**状态**：GITHUB_SOURCE_AUDIT + ISOLATED_SIMPLIFIED_LOGIC_CHECK；无第三方全套部署、无新主网可复制性验证、无真实交易。非紧急不可逆行动未执行。
+
+**下一项优先候选**：先用 Gendan 已有的共享资金源/同 Slot/接收卖出合成事件，做“地址数当独立共识”的简单基线与“明确候选关系但保留 UNKNOWN”的处理对照；若只得到分类变化没有业务意义，立即切换到真实钱包/跟随者入出场与费用问题，不重建新专家框架。这个建议可随用户下一个具体意图变化，不是强制阶段。
+
+---
+
 ## 2026-11-10｜研究偏差纠正：实操成果优先（覆盖旧默认排序）
 
 **用户问题**：最近输出“空、大、玄学”，偏离了早期有用的捆绑判断、钱包类型、买卖与软件参数。确认根因不是缺少 AI 理论，而是把专业化误转成抽象化，把知识整理当成业务进度。
