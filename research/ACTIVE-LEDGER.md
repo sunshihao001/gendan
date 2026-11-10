@@ -1,5 +1,21 @@
 # 跟单｜当前研究与实际建设台账
 
+## 2026-11-10｜Blix × Gendan × ai-d 实际资产对照 + 真实 Mint 跨业务案例
+
+**用户确认方向**：两个专业项目共享的是同一套 Solana Meme 市场事实与经济机制，区别在于 Blix 侧市场解释和 Gendan 侧跟随者行动价值；由 ai-d 提供自主研究与纠错方法。不要在 Gendan 重建另一套 Blix，也不能只有分类表、没有实际业务决策改变。
+
+**本轮实际核查**：
+- 直接读取 \`grok@blix\` 产品能力/单 Mint/跨模块代码审计、现有钱包和市场源码，\`ai-d@main\` 知识导航以及 \`gendan@main\` 专属方法。完整对照见 [能力复用报告](../project/BLIX-GENDAN-SHARED-CAPABILITY.md)。
+- GitHub 当前 PR #16 与 PR #21 仍 Open Draft 且未合并。PR #21 不在当前 \`blix\`，但其特性分支实际包含经济事件留证、签名持续采集、恢复状态、接收者后续卖出/跨 Mint 的离线测试源码。状态 STATIC_CODE_REVIEW / OFFLINE_TEST_DEFINED；本轮没执行测试，不叫主网验收。
+- 使用 Blix 2026-11-07 已独立检查过的三份 2026-11-01 真实供应商归档，对 Mint \`EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump\` 建立 [共享案例001](SHARED-CASE-001-BLIX-TO-GENDAN.md)：主 PumpSwap 池与 RugCheck 头部 Holder Owner 精确一致，避免把近6%池相关库存误当私人大户；Gendan 对相应跟单地址候选判 SKIP_AS_COPY_WALLET，对池本身判 WATCH_POOL。状态 PREVIOUSLY_AUDITED_VENDOR_SNAPSHOTS / NEW_DOMAIN_DECISION；没有重取原始ZIP或主网钱包签名。
+- 仅在 \`gendan\` 仓写回知识入口、台账及案例，没有修改 \`grok\` 或 \`ai-d\`。
+
+**实际认知增量**：第一次对同一已有真实 Mint 源证据同时作出 Blix 市场结构与 Gendan 钱包筛选的具体结论，而非重复论述“市场和跟单很相似”。明确继承方案：先复用 Blix 的事实与已验收只读能力；PR #21 为未来候选，不开发第二套多跳解析程序。
+
+**下一轮唯一 P0**：给该 PumpSwap 主池对应时间窗补至少一笔真实 Swap/LP 原始交易签名，或对已有公开钱包取得同等完整证据；随后才研究具体源钱包可复制信号。历史快照不得冒充 T_seen，单靠研究不能声称有 Alpha。若现有工具拿不到签名，先替换成熟数据入口，不增加知识文件。
+
+---
+
 ## 2026-11-10｜全项目路线重审（研究之外的路线已经补齐，但实战仍未完成）
 
 **用户纠偏**：不能只有俄语研究、源码审计和长报告。要完整包括市场候选发现、钱包资金调查、实战操作与监控、交易子集/模拟验证、风险与退出、数据工程、成熟产品复用、AI协作以及结果复盘；不能把它们写成互不连通的九套机制。
