@@ -50,3 +50,14 @@
 - [karusrus 量化示例、分析代码](https://github.com/karusrus/solana-trading-analytics)：70/30 CV 的代码未评价剩余 30% 验证表现；CSV 的匿名示例 80/80 行 ROI 与源码价格公式不一致。不要把此断言扩展为其真实交易数据错误。详见 [独立审查结果](../../research/RU-002-source-audit.md)。
 
 本轮决策改变：不再把“按钱包单独过滤”直接当成进阶技巧，而是研究**过滤规则事前冻结、同 Mint 策略竞争与纸上/实盘一致性**三项必要条件。
+
+
+## 研究 003｜新增高信息价值源：公开失败反馈优于泛泛高胜率
+
+- **[Yuno Research /solana_copy_trading](https://github.com/yuno-research/solana_copy_trading)**：不是俄文，但属于深入理解俄语源中“筛钱包/去重/执行价”的直接开源参照。FBFS、按钱包时间窗口排序、1秒延迟模型和同 Mint 去重有源码；其 [Issue #10](https://github.com/yuno-research/solana_copy_trading/issues/10) 的维护者 2025-12 自述策略当时未在新窗口盈利，并提出过拟合及研究方法问题。这里既有“成熟工程实现”也有“真实未成功研发反馈”，不能只选其中一面。[Issue #9](https://github.com/yuno-research/solana_copy_trading/issues/9) 另有卖出可能失败且重复重试的问题。研究 003 的脚本基于其代码逻辑构造合成反例，不是全仓运行复现。
+- **[OKX 俄语官方帮助](https://web3.okx.com/ru/help/how-do-i-use-the-okx-wallet-smart-account-for-copy-trading)**（2026-08 更新）：展示目标买入金额、市值、流动性、币龄和预算/风险等跟单参数；部分筛选只影响买入、卖出语义独立。这是“成熟工具已经能表达部分行为子集”的功能事实，不代表已验证净收益。
+- **[Raiden Terminal Wallet API 公开文档](https://docs.raiden.wtf/terminal/wallets)**（2026-10-12 文档更新）：提供延迟 0/1/2/5 Slot 的 copytrade 检查、跟随成本和失败交易研究模型。这是供应商算法定义；本文未获取需 Key 的真实钱包响应，不宣称已运行。其 bundled 的同 Slot 邻近标记不应被当成真实 Jito Bundle 的严格证据。
+- **[Habr 2024-04-18 评论页](https://habr.com/ru/articles/808635/comments/)**：评论者报告选择高绩效复制对象后亏损，属于社区个案，只提供竞争解释；不是 Solana Meme 实证。
+- **[Reddit 2026-09 的跟单亏损叙述](https://www.reddit.com/r/SolanaMemeCoins/comments/1wf6cgq/has_anyone_actually_made_money_copy_trading_my/)**：作者称源钱包盈利但跟随者被薄池高价差及源钱包卖压打亏。该帖子不能核验损益，但与“跟随者首次可见价格、可卖流动性”专业问题吻合。
+- **[Reddit 2024-11-24 公共钱包讨论](https://www.reddit.com/r/solana/comments/1gyehdz/how_is_this_wallet_doing_this_99_win_rate_306_mil/)**：提供完整公开钱包地址作为后续只读调查入口，而不是认可帖子宣称的 99% 胜率。
+- **[Yuno 交易签名示例](https://github.com/yuno-research/solana_copy_trading)**：README 给出同一签名两段 swap 的具体例子，尚无独立 RPC 解码。详情见 [真实证据入口](../../research/RU-003-public-evidence.md)。

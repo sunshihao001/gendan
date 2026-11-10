@@ -5,6 +5,8 @@
 ## 先看这里
 
 - [俄语跟单知识入口](knowledge/copytrading-ru/README.md)：围绕真实筛钱包、逐笔评估、个性化过滤、观察与复盘，而不是泛化协议。
+- **[研究 003：深度调查与反例](research/RU-003-deep-study.md)**：俄文原文逐段审读 × 多钱包/仓位双图 × 源码级重叠反例 × 真实公开地址/交易签名调查入口。
+- [公开链上调查证据状态](research/RU-003-public-evidence.md) ｜ [可复算离线反例](research/labs/study003_overlap_repro.py)。
 - [Mark × Froggy 长视频研究](knowledge/copytrading-ru/01-mark-video-study.md)：基于用户保存的俄中双语字幕，恢复作者实操及反面案例。
 - [跟单专属钱包判断卡](knowledge/copytrading-ru/02-wallet-selection-specific.md)：具体问题、候选类型、钱包关联与纸上验证。
 - [俄语原始资料和检索词](knowledge/copytrading-ru/SOURCES.md)：视频、Froggy 官方资料、俄语 Habr 案例、俄语 GitHub 文档，标明证据性质。

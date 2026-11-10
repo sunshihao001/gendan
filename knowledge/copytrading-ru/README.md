@@ -28,6 +28,7 @@
 
 ## 本目录的实际入口
 
+- **[03 深度研究报告：钱包交易子集与双层关系](../../research/RU-003-deep-study.md)**｜[真实公开对象和证据缺口](../../research/RU-003-public-evidence.md)｜[离线复算反例](../../research/labs/study003_overlap_repro.py)。
 - [01 视频事实与失败案例](01-mark-video-study.md)
 - [02 专属钱包判断卡](02-wallet-selection-specific.md)
 - [03 钱包交易风格与策略冲突](03-wallet-style-and-conflicts.md)
