@@ -1,5 +1,14 @@
 # 03｜跟单可复制性与纸上验证：高 PnL ≠ 跟随收益
 
+## 2026-11-10｜新证据与可推翻的策略假说：关联网络能否过滤错误共识
+
+**先把发现网络和获得收益分开验收。** 2026-10-29 预印本 [Early-Buyer Groups and Fast-Wallet Teams](https://arxiv.org/abs/2610.39458) 在 88.3 小时 pump.fun 观察窗口中发现群体关联具有可描述性，但“最早群体信号”跟随者在作者的全部 32 种样本外设置中平均净收益为负；论文报告在其成本口径下未优于随机进入。**仅属作者的特定回测结果**：没有独立复现、没有身份真值标签、窗口很短，不能推广到所有钱包网络或所有退出策略。
+
+现成代码参照：[`million/opportunities.service.ts`](https://github.com/Kelows/million/blob/main/apps/api/src/opportunities/opportunities.service.ts#L206-L252) 中独立 owner 数去重 + 可选净买卖流过滤；[`million/copyability.service.ts`](https://github.com/Kelows/million/blob/main/apps/api/src/copyability/copyability.service.ts#L17-L30) 用同池分钟 K 线把源交易与后移 60 秒的复制交易比较。源码存在不等于独立验证了该过滤的经济价值；60 秒和分钟收盘价是该作者的研究代理，不是用户真实下单的统一时差/报价。
+
+从旧命题“找到疑似同组钱包即可形成跟单线索”，修正为一项可以失败的研究假说：**在首次可见时点，使用可辩护关系去重与已知净卖压信息，是否比只按地址数或单钱包历史表现减少错误跟买，而又不丢失过多真正机会？** 若前向同条件实验不优，就不把它升级为自动跟单条件。对关系图本身可继续评估风险解释与资金研究用途。
+
+
 ## 两个问题必须分开
 
 **历史分析**：源钱包过去是否通过某类交易赚到钱？
