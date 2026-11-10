@@ -1,0 +1,31 @@
+{
+  "case_id": "DEMO-001-SYNTHETIC",
+  "mint": "DEMO_MINT_NOT_A_REAL_SOLANA_ADDRESS",
+  "data_status": "SYNTHETIC_FIXTURE_ONLY",
+  "launch_slot": 1003,
+  "observed_at": "2026-11-10T05:00:00+08:00",
+  "coverage": {
+    "raw_rpc_complete": false,
+    "historical_signatures_complete": false,
+    "quotes_and_fees_complete": false,
+    "cross_mint_complete": false,
+    "reason": "演示为人工合成数据，不代表任何真实链上地址或价格"
+  },
+  "wallets": [
+    {"id": "FUND", "name": "资金源 F"},
+    {"id": "W_A", "name": "钱包 A"},
+    {"id": "W_B", "name": "接收钱包 B"},
+    {"id": "W_C", "name": "钱包 C"},
+    {"id": "W_Z", "name": "观察钱包 Z"}
+  ],
+  "events": [
+    {"id": "e01", "signature": "DEMO_SIG_01", "instruction_index": 0, "slot": 1000, "event_time": "2026-11-09T01:00:00Z", "observed_time": "2026-11-09T01:00:05Z", "type": "sol_transfer", "from": "FUND", "to": "W_A", "asset": "SOL", "amount": "10", "source": "synthetic"},
+    {"id": "e02", "signature": "DEMO_SIG_02", "instruction_index": 0, "slot": 1001, "event_time": "2026-11-09T01:01:00Z", "observed_time": "2026-11-09T01:01:05Z", "type": "sol_transfer", "from": "FUND", "to": "W_C", "asset": "SOL", "amount": "8", "source": "synthetic"},
+    {"id": "e03", "signature": "DEMO_SIG_03", "instruction_index": 0, "slot": 1003, "event_time": "2026-11-09T01:02:00Z", "observed_time": "2026-11-09T01:02:07Z", "type": "swap_buy", "wallet": "W_A", "amount": "120000", "asset": "DEMO", "venue": "PUMP_POOL", "source": "synthetic"},
+    {"id": "e04", "signature": "DEMO_SIG_04", "instruction_index": 0, "slot": 1003, "event_time": "2026-11-09T01:02:00Z", "observed_time": "2026-11-09T01:02:10Z", "type": "swap_buy", "wallet": "W_C", "amount": "50000", "asset": "DEMO", "venue": "PUMP_POOL", "source": "synthetic"},
+    {"id": "e05", "signature": "DEMO_SIG_05", "instruction_index": 1, "slot": 1030, "event_time": "2026-11-09T01:15:00Z", "observed_time": "2026-11-09T01:15:09Z", "type": "token_transfer", "from": "W_A", "to": "W_B", "asset": "DEMO", "amount": "60000", "source": "synthetic"},
+    {"id": "e06", "signature": "DEMO_SIG_06", "instruction_index": 1, "slot": 1050, "event_time": "2026-11-09T01:30:00Z", "observed_time": "2026-11-09T01:30:05Z", "type": "swap_sell", "wallet": "W_B", "amount": "30000", "asset": "DEMO", "venue": "PUMP_POOL", "source": "synthetic"},
+    {"id": "e07", "signature": "DEMO_SIG_07", "instruction_index": 0, "slot": 1060, "event_time": "2026-11-09T01:33:00Z", "observed_time": "2026-11-09T01:33:13Z", "type": "promotion_claim", "promoter": "KOL_DEMO", "source_name": "unverified_social_post", "wallet": "W_C", "source": "synthetic"},
+    {"id": "e08", "signature": "DEMO_SIG_08", "instruction_index": 0, "slot": 1070, "event_time": "2026-11-09T01:40:00Z", "observed_time": "2026-11-09T01:40:07Z", "type": "token_transfer", "from": "W_C", "to": "W_Z", "asset": "DEMO", "amount": "20000", "source": "synthetic"}
+  ]
+}

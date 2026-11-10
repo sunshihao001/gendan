@@ -1,0 +1,22 @@
+{
+  "case_id": "BLIX-ARCHIVE-20261101-EYQYGBH",
+  "mint": "EYqygbhZjP7EbM4fSn8devctnksAvPAD1Bt57XBFpump",
+  "source_url": "https://github.com/sunshihao001/grok/blob/blix/docs/project/single-mint-audit.md",
+  "evidence_kind": "TRANSCRIBED_VENDOR_REPORT",
+  "source_note": "Values transcribed from Blix's 2026-11-07 independent audit of three 2026-11-01 provider archives; this JSON is NOT original DEX Screener or RugCheck raw response. No on-chain transaction history here.",
+  "pools": [
+    {
+      "address": "81jgrpTMsQWc1rGWXutyYWW27ruiAtehUZwLydcHHWDB",
+      "venue": "PumpSwap",
+      "observations": [
+        {"observed_at_utc": "2026-11-01T02:44:23.396Z", "price_usd": "0.0008148", "reserve_token": "57331535", "reserve_sol": "465.47", "liquidity_usd": "91059.46"},
+        {"observed_at_utc": "2026-11-01T03:23:31.969Z", "price_usd": "0.0007653", "reserve_token": "58774685", "reserve_sol": "457.4104", "liquidity_usd": "88618.50"},
+        {"observed_at_utc": "2026-11-01T03:26:30.596Z", "price_usd": "0.0007819", "reserve_token": "58374413", "reserve_sol": "461.07165", "liquidity_usd": "89627.83"}
+      ]
+    }
+  ],
+  "holder_observations": [
+    {"observed_at_utc": "2026-11-01T03:23:31.969Z", "token_account": "BYonfuCMtQL9rLeYLhLar7Jon87Nwj7PyurLFj6sNx3i", "owner": "81jgrpTMsQWc1rGWXutyYWW27ruiAtehUZwLydcHHWDB", "reported_supply_pct": "5.877731", "source_label": "AMM/Pump Fun AMM"},
+    {"observed_at_utc": "2026-11-01T03:26:30.596Z", "token_account": "BYonfuCMtQL9rLeYLhLar7Jon87Nwj7PyurLFj6sNx3i", "owner": "81jgrpTMsQWc1rGWXutyYWW27ruiAtehUZwLydcHHWDB", "reported_supply_pct": "5.971300", "source_label": "AMM/Pump Fun AMM"}
+  ]
+}

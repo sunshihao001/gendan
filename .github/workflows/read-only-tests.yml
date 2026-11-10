@@ -1,0 +1,19 @@
+name: Gendan read-only workbench tests
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Offline unit tests (no network or wallets)
+        run: python -m unittest discover -s tests -v
+      - name: Archived vendor case smoke test
+        run: python -m tools.snapshot_case data/blix_archived_mint_vendor_summary.json --out output
+      - name: Synthetic wallet graph smoke test
+        run: python -m gendan.cli data/demo_case.json --out output

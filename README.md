@@ -2,6 +2,21 @@
 
 > 2026-11-10 最新用户目标：优先俄语原始资料，建立具体的**跟单领域专属知识与思维方法**。过去提出的“先建通用 Meme 认知再研究跟单”不再是当前执行顺序。旧 Meme 知识仍保留，但只在解释某个跟单问题时按需调用。
 
+## ✅ V0.2 可运行工具（优先入口）
+
+**已在本地执行 22 项离线测试并生成实际 HTML/JSON 报告。** 现在已恢复原有钱包关系引擎，并新增真实历史供应商快照核查与 Solana 原始交易检查器，不必再从研究报告开始。
+
+~~~bash
+python -m unittest discover -s tests -v
+python -m tools.snapshot_case data/blix_archived_mint_vendor_summary.json --out output
+python -m tools.inspect_signature --input-rpc /path/to/getTransaction.json --mint <Mint> --out output/tx_inspection.json
+python -m gendan.cli data/demo_case.json --out output
+~~~
+
+- [实际工具说明与限制](docs/OPERATIONS-V0.2.md)｜[快照检查器](tools/snapshot_case.py)｜[原始交易检查器](tools/inspect_signature.py)｜[离线关系引擎](gendan/engine.py)。
+- **真实结果：** 历史 Mint 的池相关 Holder Owner 被程序识别为不能直接作为独立可跟钱包；这源于以前已审计的供应商快照摘录，**不是**实时链上数据或真实跟单收益。
+- **尚未完成：** 当前环境真实 RPC 访问、全钱包实时追踪、前向纸上跟单。README 中的研究文件属于支持材料，而非可运行产品本身。
+
 ## Blix × Gendan × ai-d：共同底层与跟单独有的判断（2026-11-10）
 
 - **[跨项目能力与知识对照审计](project/BLIX-GENDAN-SHARED-CAPABILITY.md)**：逐项核对 Blix 已有源代码/知识、PR #16/#21 真实状态、Gendan 特有的跟单判断；不复制旧 Meme 全套体系。

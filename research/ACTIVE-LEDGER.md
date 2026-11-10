@@ -1,3 +1,15 @@
+## 2026-11-10｜从知识研究转向可运行交付：V0.2 工作台
+
+**用户明确纠偏**：当前主要问题不是缺知识，不允许以知识报告、架构图和 GitHub 文档提交替代产品进度。
+
+**本轮实际完成**：恢复旧 Gendan Python 离线图谱引擎（原先存在于独立压缩包、没有进入现行 GitHub main）；新增 tools/snapshot_case.py 池/Holder 归属工具、tools/inspect_signature.py 的 jsonParsed RPC 原始交易证据检查器、真实归档摘要输入/合成测试数据及对应 unittest。使用 Python 3.13 标准库，在本地总计 **22 项测试通过**，分别执行真实来源快照与合成钱包事件 CLI，生成 JSON 与 HTML。新增 GitHub Actions离线回归工作流，实际 CI 状态须单独检查。
+
+**案例真正输出**：Blix 2026-11-01 真实供应商快照已审计数据经本轮程序处理，主 PumpSwap 池与两条头部Holder的Owner相符，输出 SKIP_AS_INDEPENDENT_WALLET、WATCH_POOL_ONLY，和 NOT_TESTABLE_WITH_SNAPSHOT_ONLY；不是现实市场盈亏证明，也未重新拉取原始归档。
+
+**未完成/下一步阻断**：当前容器不具备公网 RPC DNS 解析，因此在线 getTransaction 功能只经离线夹具测试，未实际取到新签名。下一价值行动是从现成钱包工具取得一个真实交易签名或导出 jsonParsed RPC，进入 tools/inspect_signature.py；之后才扩展连续监控、真实可见报价和纸上前向测试。此轮不追加新的研究体系。
+
+---
+
 # 跟单｜当前研究与实际建设台账
 
 ## 2026-11-10｜Blix × Gendan × ai-d 实际资产对照 + 真实 Mint 跨业务案例
