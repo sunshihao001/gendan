@@ -4,7 +4,7 @@
 
 ## ✅ V0.2 可运行工具（优先入口）
 
-**已在本地执行 22 项离线测试并生成实际 HTML/JSON 报告。** 现在已恢复原有钱包关系引擎，并新增真实历史供应商快照核查与 Solana 原始交易检查器，不必再从研究报告开始。
+**已在本地执行 22 项离线测试并生成实际 HTML/JSON 报告。** Windows 可直接运行仓库根目录 `start-windows.bat`；macOS/Linux 可运行 `sh start-macos-linux.sh`。两者只处理随附历史样本，并在完成后打开报告，不涉及签名或下单。 现在已恢复原有钱包关系引擎，并新增真实历史供应商快照核查与 Solana 原始交易检查器，不必再从研究报告开始。
 
 ~~~bash
 python -m unittest discover -s tests -v
