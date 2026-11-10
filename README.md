@@ -1,5 +1,9 @@
 # 跟单领域｜俄语实战资料优先的 Solana Meme 专属方法论
 
+## 2026-11-10｜群体信号独立性：第一个可复查的离线对照
+
+已新增 [实验001：3个合成买入钱包与关联候选的信号对照](research/SIGNAL-INDEPENDENCE-EXPERIMENT-001.md)，复用 [既有 Gendan 引擎](gendan/engine.py)，通过 [只读工具](tools/signal_independence.py)、[合成输入](data/signal_independence_demo.json)、[新测试](tests/test_signal_independence.py) 对比“直接按地址计票”与“共享资金源归并的**假设情景**”：**3地址；共同出资候选 W_A/W_C；按假设为2群组；实际独立交易者仍 UNKNOWN**。已完成独立离线复算、Python纯逻辑检查、GitHub提交回读；**完整引擎集成测试/真实链上/盈利效果未验**。这是能力之间产生具体判断增量的第一步，不是永久默认研究入口。
+
 ## 2026-11-10｜成熟产品内部机制与组合研究（新完成）
 
 **[Million × ScreenerBot × dexterm 源码/机制深审](research/MATURE-PRODUCT-MECHANISMS-20261110.md)**：已检查 Million owner关系、群体信号、shadow跳过账本、LiveEvent保留窗口；ScreenerBot copy任务、延迟熔断、paper队列和Agent参数；dexterm公开AI/paper边界与负面实盘复盘。记录“共同买币不能直接认同控”、资金Hub阈值边界、真实时钟与软件策略仓位、不同开源许可证，并提出最低成本的离线基线对照。**静态源码研究+简化逻辑复现，不代表全部第三方产品已实跑或交易策略已获利。** 此入口是可选研究材料，不强制后续任务从它开始。
