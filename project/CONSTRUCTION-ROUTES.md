@@ -4,7 +4,7 @@
 
 ## 跨项目复用：不允许第二套市场事实
 
-新增 [Blix × Gendan × ai-d 能力对照](BLIX-GENDAN-SHARED-CAPABILITY.md) 和 [共享真实 Mint 案例](../research/SHARED-CASE-001-BLIX-TO-GENDAN.md)。Blix 当前产品与未合并 PR 的源码/离线能力分开标注；Gendan 继承事实和机制，只独立研究能否及时复制、过滤规则、策略冲突与跟随者账本。PR #16/#21 仍为 Open Draft，不视为 \`blix\` 已部署 API。
+新增 [Blix × Gendan × ai-d 能力对照](BLIX-GENDAN-SHARED-CAPABILITY.md) 和 [共享真实 Mint 案例](../research/SHARED-CASE-001-BLIX-TO-GENDAN.md)。Blix 当前产品与未合并 PR 的源码/离线能力分开标注；Gendan 继承事实和机制，只独立研究能否及时复制、过滤规则、策略冲突与跟随者账本。PR #16/#21 仍为 Open Draft，不视为 `blix` 已部署 API。
 
 ## 一｜最重要的诊断：现在缺的不是另一轮知识搜索
 
