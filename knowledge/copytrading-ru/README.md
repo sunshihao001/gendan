@@ -30,6 +30,9 @@
 
 - [01 视频事实与失败案例](01-mark-video-study.md)
 - [02 专属钱包判断卡](02-wallet-selection-specific.md)
+- [03 钱包交易风格与策略冲突](03-wallet-style-and-conflicts.md)
+- [案例 RU-002：镜像冲突](../../research/RU-CASE-002.md)
+- [源代码与收益方法审计](../../research/RU-002-source-audit.md)
 - [俄语资料与检索问题](SOURCES.md)
 - [研究案例 RU-001](../../research/RU-CASE-001.md)
 
