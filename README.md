@@ -1,66 +1,35 @@
-# 跟单领域｜先建立 Solana Meme 通用专业认知，再研究跟单
+# 跟单领域｜俄语实战资料优先的 Solana Meme 专属方法论
 
-> 仓库名 `gendan` 是历史项目名称；**当前知识入口与第一优先级是通用 Meme 市场认知**。跟单是从这套知识衍生的一个应用领域，而不是整个项目知识本体。当前任务以专业研究、成熟软件复用及可复核只读分析为主，不自动下单/签名/付款。
+> 2026-11-10 最新用户目标：优先俄语原始资料，建立具体的**跟单领域专属知识与思维方法**。过去提出的“先建通用 Meme 认知再研究跟单”不再是当前执行顺序。旧 Meme 知识仍保留，但只在解释某个跟单问题时按需调用。
 
-## 现在先读哪里？
+## 先看这里
 
-**通用 Meme 专业知识（主入口）**
+- [俄语跟单知识入口](knowledge/copytrading-ru/README.md)：围绕真实筛钱包、逐笔评估、个性化过滤、观察与复盘，而不是泛化协议。
+- [Mark × Froggy 长视频研究](knowledge/copytrading-ru/01-mark-video-study.md)：基于用户保存的俄中双语字幕，恢复作者实操及反面案例。
+- [跟单专属钱包判断卡](knowledge/copytrading-ru/02-wallet-selection-specific.md)：具体问题、候选类型、钱包关联与纸上验证。
+- [俄语原始资料和检索词](knowledge/copytrading-ru/SOURCES.md)：视频、Froggy 官方资料、俄语 Habr 案例、俄语 GitHub 文档，标明证据性质。
+- [案例 RU-001](research/RU-CASE-001.md)：不是盈利秘诀，而是筛钱包后为何可能失效的具体研究。
+- [AI 跟单工作指令](prompts/AI-跟单研究指令.md) / [当前台账](research/ACTIVE-LEDGER.md)。
 
-1. [通用 Meme 认知总入口](knowledge/meme/README.md)：把市场看作协议、经济组织、价格流动性、注意力、生命周期和观测系统。
-2. [市场系统与利益组织](knowledge/meme/01-market-system.md)：发行、参与者、资本/费用与注意力反馈。
-3. [资金、库存与价格](knowledge/meme/02-capital-inventory-price.md)：账户/owner、Swap/Transfer/LP、市场风险承接和可卖容量。
-4. [数据与证据失效](knowledge/meme/03-evidence-and-failure.md)：采样、标签、时钟、样本选择和负例。
-5. [AI 领域认知与专业研究方法](knowledge/meme/04-cognitive-research-method.md)：从口语问题到现象、机制、痕迹、竞争解释、关键未知。
-6. [通用知识 → 不同应用](knowledge/meme/05-to-applications.md)：新币发现、单 Mint、跨 Mint 群体、经济机制和跟单。
-7. [来源和继承边界](knowledge/meme/SOURCES.md)：源文件审读状态与历史研究对应。
-8. [通用认知案例 001](research/MEME-CASE-001.md)：市场价格、地址数与库存现象的三种竞争解释（**教学假想，非实证**）。
-9. [AI Meme 通用认知指令](prompts/AI-Meme通用认知指令.md)：可在任意 AI 研究会话中按需调用，不是全量强制流程。
+## 你的问题就是项目的研究入口
 
-**跟单领域（第二阶段应用，旧文档保留）**
+- 一份 Froggy 导出里为什么有些高 PnL 钱包应该跳过？
+- 同一钱包为什么不能复制它的全部交易？如何按买入金额、市值和持仓行为拆解？
+- 多钱包属于同一组织、共享工具，还是独立交易者？资金、Token 和实际成交要如何区分？
+- 新钱包接收 Token 后卖出时，原钱包是否仍值得跟踪？
+- 该钱包能盈利，为什么跟随者可能因为执行延迟、费用和价格冲击而亏损？
+- 初选的钱包十天之后还有效吗？没有交易的地址怎样处理？跟单盈亏与其他交易如何拆账？
 
-- [钱包选择](methodology/01-wallet-selection.md) ｜ [钱包网络](methodology/02-wallet-network.md) ｜ [可复制性验证](methodology/03-copyability-validation.md)
-- [Froggy 成熟工具研究](tools/froggy-playbook.md) ｜ [跟单专项 AI 提示词](prompts/AI-跟单研究指令.md)
-- [当前台账](research/ACTIVE-LEDGER.md)：研究顺序、已查证内容、尚未解决的实际问题。
+## 来源与能力分工
 
-## 为什么要先理解通用 Meme？
+**研究优先级**：俄语实操视频、原始文档、可检查的复盘与反例 → 项目特有的专业假说 → 成熟软件上的验证 → 后续修订。
 
-只见「早期买入、涨幅、持币集中、许多钱包同槽交易」，无法解释：
-- 创币者、买方、LP、机器人、服务商、KOL 各自可能赚什么、亏什么；
-- Token 在地址间转移与新资金真正买入有什么不同；
-- 某个价格为什么会升高，又为何不代表大仓位能卖得掉；
-- 同源资金或同 Slot 是否可能由公共设施和共同事件造成；
-- 终端的统计分母、事件分类和延迟是否改变了我们以为的市场规律。
+**已成熟的软件**：Froggy 用于批量发现与筛选；GMGN/OKX/Blix 等用于交叉核查交易与资金；监控器用于观察买卖/转账。功能以其真实可见版本为准，不自己重复做一套交易终端。
 
-这些全是 **Meme 市场通用专业问题**。先研究这些，再判断交易观察的真实用途；未来即使不用 Froggy 或不做跟单，知识仍可用于其他市场分析。
+**按需调用的市场知识**：[原通用 Meme 知识入口](knowledge/meme/README.md)、[原 Blix 专业知识](https://github.com/sunshihao001/grok/tree/blix/knowledge)、[ai-d 专业研究方法](https://github.com/sunshihao001/ai-d)。不复制十二域/专家制度作为默认过程。
 
-## 知识与能力的层次
+## 事实边界
 
-```text
-上层方法：ai-d｜问题表征、知识选择、跨来源研究、反证、纠错
-                    ↓
-市场认知：Solana Meme｜协议 → 经济主体 → 资金/库存
-                    ↕    市场阶段、价格、流动性、注意力
-                    ↕    数据可见性、抽样和可验证性
-                    ↓
-多种用途：市场发现｜单Mint调查｜跨Mint监控｜经济机制
-                                    └→ 跟单筛选、跟单风险
-                    ↓
-现成工具：Blix / OKX / GMGN / Froggy / 其他实际可用产品
-```
+资料阅读≠实际运行。俄语作者操作演示≠稳定盈利。供应商 ROI、Win Rate 和 PnL≠自己的可复制收益。同槽/同源资金≠共同控制。仅进行只读调查与纸上跟单研究；不授权交易、签名、付款或提交私钥。
 
-上图是**知识依赖**而非强制研究流程。按具体问题选需要的部分，不把旧 Grok 十二域/八层/22位专家复制成第二套框架。
-
-## 上游来源
-
-- 通用人机研究：https://github.com/sunshihao001/ai-d
-- Meme 专业知识与 Blix 主体：https://github.com/sunshihao001/grok/tree/blix/knowledge
-- 原 Hermes：https://github.com/sunshihao001/-
-- 原 qb-：https://github.com/sunshihao001/qb-
-- 原 meme-：https://github.com/sunshihao001/meme-
-- Froggy 文档（将来用于应用验证）：https://froggy-v2-0-by-shit101.gitbook.io/frogy-v2-0-by-shit101
-
-## 当前真实完成度
-
-已提交：**通用知识入口、机制正文、认知方法、来源映射和教学示例**。这是对部分已读原始资料的知识综合；**不是全量历史资料都深读了，不是运行中的智能研究 Agent，也未通过独立认知提升或实盘收益验证**。
-
-接下来应先检查本体系能否比「看标签/看价格」更准确解释一个不涉及跟单的真实 Meme 市场问题。若方法有效，再把通用能力应用到 Froggy 等成熟软件的跟单研究中。当前真实进度及遗留问题参见[台账](research/ACTIVE-LEDGER.md)。
+**当前状态**：已阅读已保存俄语字幕及部分公开俄语材料、完成方法与问题归纳；未登录 Froggy、未获取真实钱包导出、未核验作者真实盈利。接下来最有价值的是在真实导出或公开钱包上完成第一张可核验的研究卡，而不是继续扩展概念目录。
